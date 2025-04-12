@@ -23,55 +23,98 @@
   </header>
 
   <main>
-    <section id="home" class="banner">
-      <img src="images/home-bg.jpg" alt="Home Banner"/>
-      <h1>Welcome to SB Contracting</h1>
-      <p>Your trusted partner in top-quality contracting services.</p>
+    <!-- HOME -->
+    <section id="home" class="banner" style="position: relative; text-align: center; color: white;">
+      <img src="images/home-bg.jpg" alt="Home Banner" style="width: 100%; height: auto; opacity: 0.6;">
+      <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">
+        <h1>SB Contracting</h1>
+        <p>WELDING AND INSULATION.</p>
+        <a href="#contact"><button>Contact us</button></a>
+      </div>
     </section>
 
+    <!-- ABOUT + OUR MISSION -->
     <section id="about">
       <h2>About Us</h2>
-      <p>SB Contracting has been delivering high-quality construction services with a commitment to excellence for over 10 years.</p>
+      <p>At SB Contracting, we are passionate about providing innovative, high-quality solutions in the welding and insulation fields. Founded in 2023, our company has grown thanks to our attention to detail, safety, and customer satisfaction.</p>
       <img src="images/about-us-team.jpg" alt="Our team"/>
+
+      <h2>Our Mission</h2>
+      <p>To provide top-tier welding and insulation services that contribute to the efficiency and safety of our clients, all while maintaining the highest standards of quality and responsibility.</p>
     </section>
 
+    <!-- SERVICES -->
     <section id="services">
       <h2>Services</h2>
       <div class="service-grid">
-        <div>
-          <img src="images/services-icon1.jpg" alt="Residential Projects"/>
-          <p>Residential Projects</p>
+        <div class="service">
+          <img src="images/services-icon1.jpg" alt="Ship and shipyard maintenance"/>
+          <h3>Ship and shipyard maintenance</h3>
+          <p>Involves inspections, repairs, and upgrades to ensure vessels' safety, efficiency, and longevity, as well as the upkeep of shipyard facilities.</p>
         </div>
-        <div>
-          <img src="images/services-icon2.jpg" alt="Commercial Builds"/>
-          <p>Commercial Builds</p>
+        <div class="service">
+          <img src="images/services-icon2.jpg" alt="Welding"/>
+          <h3>Welding</h3>
+          <p>Ensure structural integrity through specialized techniques for hulls, decks, and internal structures, providing strength and watertightness.</p>
+        </div>
+        <div class="service">
+          <img src="images/services-icon3.jpg" alt="Insulation"/>
+          <h3>Insulation</h3>
+          <p>Enhance thermal, acoustic, and fire protection by applying specialized materials to hulls, decks, and interiors, ensuring efficiency and safety.</p>
         </div>
       </div>
     </section>
 
+    <!-- OUR WORK -->
     <section id="our-work">
-      <h2>Our Work</h2>
-      <div class="work-gallery">
-        <img src="images/our-work-project1.jpg" alt="Project 1"/>
-        <img src="images/our-work-project2.jpg" alt="Project 2"/>
-      </div>
+      <h2>Some companies we have work with</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li>01. Veliromano Finland Oy</li>
+        <li>02. TLR-Eristys Lahti Oy</li>
+        <li>03. Leitilan HT-Eristys Oy</li>
+        <li>04. KTS Solution Oy</li>
+      </ul>
+      <img src="images/our-work-project1.jpg" alt="Our Work Example"/>
     </section>
 
+    <!-- WORKING AT -->
     <section id="working-at">
-      <h2>Working At SB</h2>
-      <p>Join a team of passionate professionals who value collaboration and creativity.</p>
-      <img src="images/working-at-photo.jpg" alt="Working at SB"/>
+      <h2>Currently working at “Meyer Turku”</h2>
+      <img src="images/working-at-photo.jpg" alt="Working at Meyer Turku"/>
     </section>
 
+    <!-- CONTACT US -->
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>Email: contact@sbcontracting.com</p>
-      <img src="images/contact-us-map.jpg" alt="Our location"/>
+      <form action="mailto:alzubaidi.sbcontracting@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 SB Contracting</p>
+  <!-- FOOTER -->
+  <footer style="background-color: #111; color: white; padding: 40px 20px; text-align: center;">
+    <h3>SB CONTRACTING</h3>
+    <div style="display: flex; justify-content: center; gap: 50px; margin-top: 20px;">
+      <div>
+        <h4>Contact</h4>
+        <p>alzubaidi.sbcontracting@gmail.com</p>
+        <p>+358 451129933</p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Turku, Finland</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
